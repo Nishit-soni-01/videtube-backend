@@ -4,7 +4,7 @@ import { ApiError } from "../utils/ApiError.js";
 const errorHandler = (err, req, res, next) => {
     let error = err;
 
-    // Convert raw errors into a standardized ApiError
+    
     if (!(error instanceof ApiError)) {
         const statusCode =
             error.statusCode || (error instanceof mongoose.Error ? 400 : 500);
