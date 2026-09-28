@@ -18,7 +18,7 @@ const errorHandler = (err, req, res, next) => {
         );
     }
 
-    // 1. Explicitly print the error stack to your terminal
+    
     console.error("❌ API Error Stack:", error.stack || error);
 
     // 2. Build response object
