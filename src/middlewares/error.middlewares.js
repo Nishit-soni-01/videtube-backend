@@ -21,7 +21,7 @@ const errorHandler = (err, req, res, next) => {
     
     console.error("❌ API Error Stack:", error.stack || error);
 
-    // 2. Build response object
+    
     const response = {
         success: false,
         statusCode: error.statusCode,
