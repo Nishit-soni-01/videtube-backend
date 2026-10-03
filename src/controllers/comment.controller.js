@@ -78,7 +78,7 @@ const getVideoComments = asyncHandler(async (req, res) => {
     )
 })
 
-// POST /api/v1/comments/:videoId
+
 const addComment = asyncHandler(async (req, res) => {
     const { videoId } = req.params
     const { content } = req.body
