@@ -5,7 +5,7 @@ import { Like } from "../models/like.model.js"
 import { ApiResponse } from "../utils/ApiResponse.js"
 import { asyncHandler } from "../utils/asyncHandler.js"
 
-// GET /api/v1/dashboard/stats
+
 const getChannelStats = asyncHandler(async (req, res) => {
     const userId = req.user._id
 
