@@ -9,7 +9,7 @@ import { asyncHandler } from "../utils/asyncHandler.js"
 const getChannelStats = asyncHandler(async (req, res) => {
     const userId = req.user._id
 
-    // 1. Total Subscribers
+    
     const totalSubscribers = await Subscription.countDocuments({ channel: userId })
 
     // 2. Video Stats (Total Videos & Total Views)
